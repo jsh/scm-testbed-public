@@ -1,0 +1,1 @@
+curl -H "Authorization: token 90c59fb7caa52fb84eb8cf433c271d6f0edf58e3" https://api.github.com/users/jsh -X POST https://api.github.com/repos/jsh/scm-testbed-public/statuses/abd8b1aada4c1514f5a23362f16d443e5b13437f -d @postbody

@@ -1,0 +1,4 @@
+POST /repos/:owner/:repo/statuses/:sha
+GET /repos/:owner/:repo/commits/:ref/statuses
+# legacy GET /repos/:owner/:repo/statuses/:ref
+GET /repos/:owner/:repo/commits/:ref/status
