@@ -1,5 +1,5 @@
-#!/bin/bash -eux
+#!/bin/bash -eu
 
 source $(dirname $(readlink -f $0))/try-vars
 
-curl -H "Authorization: token $oauth_token" -X GET https://api.github.com/repos/$repo/commits/$branch/statuses
+curl -s -H "Authorization: token $oauth_token" -X GET https://api.github.com/repos/$repo/commits/$branch/status${1:+es}
