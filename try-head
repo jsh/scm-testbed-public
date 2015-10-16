@@ -1,0 +1,5 @@
+#!/bin/bash -eux
+
+source $(dirname $(readlink -f $0))/try-vars
+
+curl -H "Authorization: token $oauth_token" -X GET https://api.github.com/users/$user -I

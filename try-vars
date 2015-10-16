@@ -1,0 +1,5 @@
+oauth_token=$(cat oauth-token)
+repo=$(git remote -v | sed '1s/.*github.com.//; s/\..*//; q')
+branch=$(git branch | perl -lane 'print if s/\* //')
+SHA=$(git rev-parse HEAD)
+user=$(sed 's/\/.*//' <<< $repo)
