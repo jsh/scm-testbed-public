@@ -1,6 +1,6 @@
 {
-  "state": "failure",
+  "state": "success",
   "target_url": "https://github.com/jsh/git-paleontology.git",
-  "description": "No success this time",
+  "description": "at last!",
   "context": "testing"
 }
